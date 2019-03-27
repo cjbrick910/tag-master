@@ -25,3 +25,4 @@ C:\Users\chouse\Source\Repos\cjbrick910\tag-master\tagmast\tagmast\obj\Release\t
 C:\Users\chouse\Source\Repos\cjbrick910\tag-master\tagmast\tagmast\obj\Release\tagmast.csproj.CopyComplete
 C:\Users\chouse\Source\Repos\cjbrick910\tag-master\tagmast\tagmast\obj\Release\tagmast.exe
 C:\Users\chouse\Source\Repos\cjbrick910\tag-master\tagmast\tagmast\obj\Release\tagmast.pdb
+C:\Users\chouse\Source\Repos\cjbrick910\tag-master\tagmast\tagmast\obj\Release\tagmast.csprojAssemblyReference.cache

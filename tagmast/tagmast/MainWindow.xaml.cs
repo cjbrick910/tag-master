@@ -65,10 +65,20 @@ namespace tagmast
                     // want to open, delete or modify the file, then
                     // a try-catch block is required here to handle the case
                     // where the file has been deleted since the call to TraverseTree().
+                    try
+                    {
                     string file = fi.FullName;
                     var shellFile = ShellFile.FromFilePath(file);
-
                     shellFile.Properties.System.Keywords.Value = keyword;
+                    }
+       
+                    catch (Microsoft.WindowsAPICodePack.Shell.PropertySystem.PropertySystemException e)
+                    {
+                        string caption = "Error: non media files found";
+                        string message = fi.FullName;
+                        MessageBox.Show(message, caption, MessageBoxButton.OK);
+                    }
+                    
                     
                 }
 
