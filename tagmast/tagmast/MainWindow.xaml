@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="test" HorizontalAlignment="Left" Margin="331,312,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" IsCancel="True"/>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="24" Margin="195,189,0,0" TextWrapping="Wrap" Text="Enter Directory here" VerticalAlignment="Top" Width="345" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+        <Button Content="Add tags" HorizontalAlignment="Left" Margin="366,345,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click" IsCancel="True"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="24" Margin="232,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,7 +18,10 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Height="38" Margin="284,237,0,0" TextWrapping="Wrap" Text="enter tags here" VerticalAlignment="Top" Width="167" TextChanged="Textbox2_TextChanged"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Height="38" Margin="313,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" TextChanged="Textbox2_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="313,92,0,0" TextWrapping="Wrap" Text="1. Enter the directory of your files" VerticalAlignment="Top" Width="182"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="313,92,0,0" TextWrapping="Wrap" Text="1. Enter the directory of your files" VerticalAlignment="Top" Width="182"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="285,197,0,0" TextWrapping="Wrap" Text="2. Enter the tag you want to add to your files" VerticalAlignment="Top" Width="238"/>
 
     </Grid>
 </Window>
