@@ -1,6 +1,7 @@
 ﻿using Microsoft.WindowsAPICodePack.Shell;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,23 +22,26 @@ namespace tagmast
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string test;
+       
+        
 
         public MainWindow()
         {
             InitializeComponent();
 
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             string[] keywords = new string[1];
             keywords[0] = textbox2.Text;
            string dir = TextBox1.Text;
-            var shellFile = ShellFile.FromFilePath(dir);
-            shellFile.Properties.System.Keywords.Value = keywords;
+            DirectoryInfo di1 = new DirectoryInfo(dir);
+            System.IO.DirectoryInfo rootDir = di1;
+            WalkDirectoryTree(di1, keywords);
 
         }
-        static void WalkDirectoryTree(System.IO.DirectoryInfo root)
+        public static void WalkDirectoryTree(System.IO.DirectoryInfo root, string[] keyword)
         {
             System.IO.FileInfo[] files = null;
             System.IO.DirectoryInfo[] subDirs = null;
@@ -61,7 +65,11 @@ namespace tagmast
                     // want to open, delete or modify the file, then
                     // a try-catch block is required here to handle the case
                     // where the file has been deleted since the call to TraverseTree().
-                    Console.WriteLine(fi.FullName);
+                    string file = fi.FullName;
+                    var shellFile = ShellFile.FromFilePath(file);
+
+                    shellFile.Properties.System.Keywords.Value = keyword;
+                    
                 }
 
                 // Now find all the subdirectories under this directory.
@@ -70,7 +78,7 @@ namespace tagmast
                 foreach (System.IO.DirectoryInfo dirInfo in subDirs)
                 {
                     // Resursive call for each subdirectory.
-                    WalkDirectoryTree(dirInfo);
+                    WalkDirectoryTree(dirInfo, keyword);
                 }
             }
         }
@@ -80,7 +88,7 @@ namespace tagmast
 
         }
 
-        private void Textbox2_TextChanged(object sender, TextChangedEventArgs e)
+        public void Textbox2_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
