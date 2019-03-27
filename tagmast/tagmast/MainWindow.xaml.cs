@@ -31,9 +31,9 @@ namespace tagmast
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string[] keywords = new string[1];
-            keywords[0] = "test";
-           string test = TextBox1.Text;
-            var shellFile = ShellFile.FromFilePath(test);
+            keywords[0] = textbox2.Text;
+           string dir = TextBox1.Text;
+            var shellFile = ShellFile.FromFilePath(dir);
             shellFile.Properties.System.Keywords.Value = keywords;
 
         }
@@ -76,6 +76,11 @@ namespace tagmast
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Textbox2_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
