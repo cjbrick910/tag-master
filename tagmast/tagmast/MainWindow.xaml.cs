@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Shell;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,35 +21,63 @@ namespace tagmast
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string test;
+
         public MainWindow()
         {
             InitializeComponent();
+
         }
-        public static void Main(string[] args)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            List<string> arrHeaders = new List<string>();
+            string[] keywords = new string[1];
+            keywords[0] = "test";
+           string test = TextBox1.Text;
+            var shellFile = ShellFile.FromFilePath(test);
+            shellFile.Properties.System.Keywords.Value = keywords;
 
-            Shell32.Shell shell = new Shell32.Shell();
-            Shell32.Folder objFolder;
+        }
+        static void WalkDirectoryTree(System.IO.DirectoryInfo root)
+        {
+            System.IO.FileInfo[] files = null;
+            System.IO.DirectoryInfo[] subDirs = null;
 
-            objFolder = shell.NameSpace(@"C:\temp\testprop");
-
-            for (int i = 0; i < short.MaxValue; i++)
+            // First, process all the files directly under this folder
+            try
             {
-                string header = objFolder.GetDetailsOf(null, i);
-                if (String.IsNullOrEmpty(header))
-                    break;
-                arrHeaders.Add(header);
+                files = root.GetFiles("*.*");
             }
 
-            foreach (Shell32.FolderItem2 item in objFolder.Items())
+            catch (System.IO.DirectoryNotFoundException e)
             {
-                for (int i = 0; i < arrHeaders.Count; i++)
+                Console.WriteLine(e.Message);
+            }
+
+            if (files != null)
+            {
+                foreach (System.IO.FileInfo fi in files)
                 {
-                    Console.WriteLine(
-                      $"{i}\t{arrHeaders[i]}: {objFolder.GetDetailsOf(item, i)}");
+                    // In this example, we only access the existing FileInfo object. If we
+                    // want to open, delete or modify the file, then
+                    // a try-catch block is required here to handle the case
+                    // where the file has been deleted since the call to TraverseTree().
+                    Console.WriteLine(fi.FullName);
+                }
+
+                // Now find all the subdirectories under this directory.
+                subDirs = root.GetDirectories();
+
+                foreach (System.IO.DirectoryInfo dirInfo in subDirs)
+                {
+                    // Resursive call for each subdirectory.
+                    WalkDirectoryTree(dirInfo);
                 }
             }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
