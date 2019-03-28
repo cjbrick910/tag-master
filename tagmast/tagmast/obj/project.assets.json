@@ -1,0 +1,373 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "WindowsAPICodePack-Core/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ExtendedLinguisticServices/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Sensors/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ShellExtensions/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Shell": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "WindowsAPICodePack-Core/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ExtendedLinguisticServices/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Sensors/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ShellExtensions/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Shell": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "WindowsAPICodePack-Core/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ExtendedLinguisticServices/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Sensors/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ShellExtensions/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Shell": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "WindowsAPICodePack-Core/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ExtendedLinguisticServices/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Sensors/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
+      },
+      "WindowsAPICodePack-ShellExtensions/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Shell": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WindowsAPICodePack-Core/1.1.2": {
+      "sha512": "tGEkicg61OvHHuFyD4Vu8H4R0q5H1dlpN6fqjdYG+MGIp16znEVo/I+LhMTx3nKpM46reCcE6oC8fJqVJix2Bg==",
+      "type": "package",
+      "path": "windowsapicodepack-core/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.dll",
+        "lib/Microsoft.WindowsAPICodePack.xml",
+        "windowsapicodepack-core.1.1.2.nupkg.sha512",
+        "windowsapicodepack-core.nuspec"
+      ]
+    },
+    "WindowsAPICodePack-ExtendedLinguisticServices/1.1.1": {
+      "sha512": "VvvklbjqLA1dPUhSwvy9qlIQYOMylrZYFZXeZ2An6dzz3w/bgQslpkfHLOiV/7U37o/rJkziQa7TWfJvS2uXvg==",
+      "type": "package",
+      "path": "windowsapicodepack-extendedlinguisticservices/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll",
+        "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml",
+        "windowsapicodepack-extendedlinguisticservices.1.1.1.nupkg.sha512",
+        "windowsapicodepack-extendedlinguisticservices.nuspec"
+      ]
+    },
+    "WindowsAPICodePack-Sensors/1.1.1": {
+      "sha512": "5PXV8aFc8vXDhKa1P+erpfE5c02a/iq/twWKREfIspmxCANes+a7CywLkV1Rx+qiqSRt7X8DW4a0tGxrTM41zg==",
+      "type": "package",
+      "path": "windowsapicodepack-sensors/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.Sensors.dll",
+        "lib/Microsoft.WindowsAPICodePack.Sensors.xml",
+        "windowsapicodepack-sensors.1.1.1.nupkg.sha512",
+        "windowsapicodepack-sensors.nuspec"
+      ]
+    },
+    "WindowsAPICodePack-Shell/1.1.1": {
+      "sha512": "CPFamhL3jPo8O6+ErGsLS4LK3DWP5ncxqhbzpPnYkIW9rjatunUij35iTjprbr9mlYR/5Pbguw21MwSmTOKR4g==",
+      "type": "package",
+      "path": "windowsapicodepack-shell/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/Microsoft.WindowsAPICodePack.Shell.xml",
+        "windowsapicodepack-shell.1.1.1.nupkg.sha512",
+        "windowsapicodepack-shell.nuspec"
+      ]
+    },
+    "WindowsAPICodePack-ShellExtensions/1.1.1": {
+      "sha512": "DkSEVhbM6tApOz4KWAnpOicItDai1SgJZYTR//pS4eywn/lTKvwTC5R4MD3UTVYNhssPBKM/mPZBK39lhP1Tsg==",
+      "type": "package",
+      "path": "windowsapicodepack-shellextensions/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll",
+        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.xml",
+        "windowsapicodepack-shellextensions.1.1.1.nupkg.sha512",
+        "windowsapicodepack-shellextensions.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "WindowsAPICodePack-Core >= 1.1.2",
+      "WindowsAPICodePack-ExtendedLinguisticServices >= 1.1.1",
+      "WindowsAPICodePack-Sensors >= 1.1.1",
+      "WindowsAPICodePack-Shell >= 1.1.1",
+      "WindowsAPICodePack-ShellExtensions >= 1.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\chris\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\chris\\Source\\Repos\\cjbrick910\\tag-master\\tagmast\\tagmast\\tagmast.csproj",
+      "projectName": "tagmast",
+      "projectPath": "C:\\Users\\chris\\Source\\Repos\\cjbrick910\\tag-master\\tagmast\\tagmast\\tagmast.csproj",
+      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chris\\Source\\Repos\\cjbrick910\\tag-master\\tagmast\\tagmast\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "WindowsAPICodePack-Core": {
+            "target": "Package",
+            "version": "[1.1.2, )"
+          },
+          "WindowsAPICodePack-ExtendedLinguisticServices": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
+          "WindowsAPICodePack-Sensors": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
+          "WindowsAPICodePack-Shell": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
+          "WindowsAPICodePack-ShellExtensions": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
