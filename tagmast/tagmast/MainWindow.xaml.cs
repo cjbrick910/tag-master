@@ -40,8 +40,6 @@ namespace tagmast
            string dir = TextBox1.Text;
             //turns the string into a DirectoryInfo object di1
             DirectoryInfo di1 = new DirectoryInfo(dir);
-            //declares rootDir as another DirectoryInfo object with the same value as di1
-            System.IO.DirectoryInfo rootDir = di1;
             //sends the keywords variable and the di1 variable to the WalkDirectoryTree method, which does most of the processing
             WalkDirectoryTree(di1, keywords);
 
